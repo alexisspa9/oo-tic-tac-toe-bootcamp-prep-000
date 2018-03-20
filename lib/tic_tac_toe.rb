@@ -37,15 +37,17 @@ class TicTacToe
   end
   
   def turn
-    puts "Whatis your move?"
-    input = gets.strip
-    input = input_to_index(input)
-    if valid_move(input)
-      move(input, current_player)
-      display_board
+    puts "Please enter a number (1-9):"
+    user_input = gets.strip
+    index = input_to_index(user_input)
+    if valid_move?(index)
+      token = current_player
+      move(index, token)
     else
       turn
     end
+    display_board
+  end
   
   def turn_count
     @board.count{|square| square != " " }
