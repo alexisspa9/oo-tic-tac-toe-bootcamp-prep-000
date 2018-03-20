@@ -30,6 +30,7 @@ class TicTacToe
   def position_taken?(input_to_index)
     !(@board[input_to_index] == " " || @board[input_to_index] == "")
   end
-
+    def valid_move?()
+    end
   
 end
