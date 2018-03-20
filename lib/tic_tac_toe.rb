@@ -36,7 +36,14 @@ class TicTacToe
     (input_to_index.between?(0,8) && !position_taken?(input_to_index))
   end
   
-  def turn()
+  def turn
+    puts "Whatis your move?"
+    input = gets.strip
+    input = input_to_index(input)
+    if valid_move(input)
+      move(input, token = 'X')
+      
+    end
   
   end
   
