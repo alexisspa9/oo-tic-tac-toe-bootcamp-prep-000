@@ -23,6 +23,7 @@ class TicTacToe
   def input_to_index(input)
     input.to_i - 1
   end
+  
   def move(input_to_index, token = 'X')
     @board[input_to_index] = token
   end
@@ -30,7 +31,9 @@ class TicTacToe
   def position_taken?(input_to_index)
     !(@board[input_to_index] == " " || @board[input_to_index] == "")
   end
-    def valid_move?()
-    end
+  
+  def valid_move?()
+  
+  end
   
 end
