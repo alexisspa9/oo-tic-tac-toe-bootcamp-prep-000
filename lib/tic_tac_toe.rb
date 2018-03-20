@@ -41,12 +41,18 @@ class TicTacToe
     input = gets.strip
     input = input_to_index(input)
     if valid_move(input)
-      move(input, token = 'X')
+      move(input, current_player)
       display_board
     else
       turn
     end
   
+  def turn_count  
+    
   end
+  def current_player
+  
+  end
+
   
 end
